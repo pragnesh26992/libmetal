@@ -10,9 +10,12 @@
  */
 
 #include <metal/io.h>
+#include <metal/utilities.h>
 
 void metal_sys_io_mem_map(struct metal_io_region *io)
 {
+	metal_unused(io);
+#if 0
 	unsigned long p;
 	size_t psize;
 	void *va;
@@ -28,4 +31,5 @@ void metal_sys_io_mem_map(struct metal_io_region *io)
 			va += psize;
 		}
 	}
+#endif
 }

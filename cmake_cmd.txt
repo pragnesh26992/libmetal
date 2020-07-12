@@ -1,0 +1,5 @@
+linux:
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/platforms/e-sdk-linux.cmake -DLIBSYSFS_LIBRARY=/india/proj_ssw/work/yashs/source/sysfsutils/lib/.libs/libsysfs.a -DLIBRT_LIBRARIES=/india/proj_ssw/work/data/x-tools/riscv64-unknown-linux-gnu/riscv64-unknown-linux-gnu/sysroot/usr/lib64/lp64d/librt.so -DWITH_TESTS=OFF -DWITH_DOC=OFF
+
+firmware:
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/platforms/e-sdk.cmake
