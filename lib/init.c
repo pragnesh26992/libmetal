@@ -7,14 +7,11 @@
 #include <string.h>
 #include <metal/sys.h>
 
-int metal_init(const struct metal_init_params *params)
+int metal_init_2(const struct metal_init_params *params)
 {
 	int error = 0;
 
 	memset(&_metal, 0, sizeof(_metal));
-
-	_metal.common.log_handler   = params->log_handler;
-	_metal.common.log_level     = params->log_level;
 
 	metal_list_init(&_metal.common.bus_list);
 	metal_list_init(&_metal.common.generic_shmem_list);

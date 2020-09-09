@@ -103,7 +103,7 @@ extern struct metal_state _metal;
  *
  * @see metal_finish
  */
-extern int metal_init(const struct metal_init_params *params);
+extern int metal_init_2(const struct metal_init_params *params);
 
 /**
  * @brief	Shutdown libmetal.
