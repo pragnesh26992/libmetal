@@ -22,10 +22,19 @@
 extern "C" {
 #endif
 
+#define WAIT_1S(timeout)                                                       \
+  timeout = time(NULL) + 1;                                                    \
+  while (timeout > time(NULL))                                                 \
+    ;
+
 static inline int __metal_sleep_usec(unsigned int usec)
 {
-	metal_unused(usec);
 	/* Fix me */
+	/* Add usleep support for baremetal firmware */
+
+	time_t timeout;
+	WAIT_1S(timeout);
+
 	return 0;
 }
 
