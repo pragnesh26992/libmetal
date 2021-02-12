@@ -17,6 +17,7 @@
 #define __METAL_GENERIC_SLEEP__H__
 
 #include <metal/utilities.h>
+#include <time.h>
 
 #ifdef __cplusplus
 extern "C" {
